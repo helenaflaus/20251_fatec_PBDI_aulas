@@ -15,8 +15,8 @@ BEGIN
         
         RAISE NOTICE '%', contador;
     END LOOP;
-END;
-$$
+END
+$$;
 
 --EXIT WHEN
 DO $$
@@ -28,8 +28,8 @@ BEGIN
         contador := contador + 1;
         EXIT WHEN contador > 10;
     END LOOP;
-END;
-$$
+END
+$$;
 
 DO $$
 DECLARE
@@ -42,8 +42,8 @@ BEGIN
             EXIT;
         END IF;
     END LOOP;
-END;
-$$
+END
+$$;
 
 DO $$
 BEGIN
@@ -51,5 +51,5 @@ BEGIN
     LOOP
         RAISE NOTICE 'Um loop simples...';
     END LOOP;
-END;
-$$
+END
+$$;
