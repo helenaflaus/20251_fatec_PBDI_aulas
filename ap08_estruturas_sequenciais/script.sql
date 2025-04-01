@@ -23,32 +23,32 @@ END;
 $$
 
 -- variáveis
--- DO
--- $$
--- DECLARE
---     v_codigo INTEGER := 1;
---     v_nome_completo VARCHAR(200) := 'Joao';
---     v_salario NUMERIC (11,2) := 20.5;
--- BEGIN
--- -- nome: 'Ana'
--- -- print(f'Me chamo {nome})
---     RAISE NOTICE 'Meu código é % , me chamo % e meu salário é %',
---     v_codigo, v_nome_completo, v_salario;
--- END;
--- $$
+DO
+$$
+DECLARE
+    v_codigo INTEGER := 1;
+    v_nome_completo VARCHAR(200) := 'Joao';
+    v_salario NUMERIC (11,2) := 20.5;
+BEGIN
+    nome: 'Ana'
+    --print(f'Me chamo {nome})
+    RAISE NOTICE 'Meu código é % , me chamo % e meu salário é %',
+    v_codigo, v_nome_completo, v_salario;
+END;
+$$
 
 --placeholders de expressões em strings
--- DO
--- $$
--- BEGIN
---     RAISE NOTICE '% + % = %', 2, 2, 2 + 2;
--- END;
--- $$
+DO
+$$
+BEGIN
+    RAISE NOTICE '% + % = %', 2, 2, 2 + 2;
+END
+$$;
 
--- DO
--- $$
--- BEGIN
---     RAISE NOTICE 'Meu 1o bloquinho anônimo';
--- END;
--- $$
--- CREATE DATABASE "20251_fatec_pbdi_helena"
+DO
+$$
+BEGIN
+    RAISE NOTICE 'Meu 1o bloquinho anônimo';
+END;
+$$
+CREATE DATABASE "20251_fatec_pbdi_helena"
